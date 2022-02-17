@@ -13,9 +13,8 @@ def binarySearch(array, item):
     #set variables 
     li = 0
     ui = len(array) - 1
-    loop = True
     
-    while loop:
+    while ui > li:
         mi = math.floor((li + ui)/2)
         if item == array[mi]:
             return mi
